@@ -1,6 +1,6 @@
 <package>
 
-  <name>panda_moveit_config</name>
+  <name>panda_moveit_config_vine_tomato</name>
   <version>0.8.1</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the panda with the MoveIt Motion Planning Framework

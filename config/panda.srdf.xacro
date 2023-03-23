@@ -6,7 +6,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="panda">
     <xacro:arg name="arm_id" default="panda" />
 
-    <xacro:include filename="$(find panda_moveit_config)/config/arm.xacro" />
+    <xacro:include filename="$(find panda_moveit_config_vine_tomato)/config/arm.xacro" />
     <!-- panda_arm group: eef frame aligned to robot's flanche -->
     <xacro:arm name="$(arg arm_id)_arm" tip_link="$(arg arm_id)_link8"/>
     <xacro:arm name="$(arg arm_id)_camera" tip_link="fake_camera_link"/>
@@ -16,7 +16,7 @@
     <xacro:if value="$(arg hand)">
         <!-- manipulator group: eef frame aligned to hand -->
         <xacro:arm name="$(arg arm_id)_manipulator" tip_link="$(arg arm_id)_hand_tcp" />
-        <xacro:include filename="$(find panda_moveit_config)/config/hand.xacro" />
+        <xacro:include filename="$(find panda_moveit_config_vine_tomato)/config/hand.xacro" />
         <xacro:hand />
 
         <!--END EFFECTOR: Purpose: Represent information about an end effector.-->

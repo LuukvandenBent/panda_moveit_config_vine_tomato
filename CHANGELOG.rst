@@ -1,11 +1,11 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package panda_moveit_config
+Changelog for package panda_moveit_config_vine_tomato
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.8.1 (2022-09-11)
 ------------------
-* Update to franka_description 0.10.0 (`#119 <https://github.com/ros-planning/panda_moveit_config/issues/119>`_)
-* Example use of ns parameter in sensors.yaml (`#88 <https://github.com/ros-planning/panda_moveit_config/issues/88>`_)
+* Update to franka_description 0.10.0 (`#119 <https://github.com/ros-planning/panda_moveit_config_vine_tomato/issues/119>`_)
+* Example use of ns parameter in sensors.yaml (`#88 <https://github.com/ros-planning/panda_moveit_config_vine_tomato/issues/88>`_)
 * Drop link8 from ACM as this link doesn't have any collision model anymore
 * srdf: Use loop macros to reduce code redundancy
 * Unify calls to xacro

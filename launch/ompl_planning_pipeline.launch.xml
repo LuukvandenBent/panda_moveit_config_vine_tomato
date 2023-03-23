@@ -22,6 +22,6 @@
   <!-- Add MoveGroup capabilities specific to this pipeline -->
   <!-- <param name="capabilities" value="" /> -->
 
-  <rosparam command="load" file="$(find panda_moveit_config)/config/ompl_planning.yaml" subst_value="true"/>
+  <rosparam command="load" file="$(find panda_moveit_config_vine_tomato)/config/ompl_planning.yaml" subst_value="true"/>
 
 </launch>

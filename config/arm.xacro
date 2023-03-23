@@ -70,4 +70,11 @@
     <xacro:configure_collisions link="5" />
     <xacro:configure_collisions link="6" />
     <xacro:configure_collisions link="7" />
+
+<!-- Disable some collision of camera with arm links  -->
+    <xacro:property name="link_camera" value="$(arg arm_id)_link{}" />
+    <xacro:disable_collisions_for link="fake_camera_link" others="${[link_camera.format(i) for i in python.range(5,8)]}" />
+    <!-- Disable collision of camera with _sc links -->
+    <xacro:property name="link_camera" value="$(arg arm_id)_link{}_sc" />
+    <xacro:disable_collisions_for link="fake_camera_link" others="${[link_camera.format(i) for i in python.range(5,8)]}" />
 </robot>

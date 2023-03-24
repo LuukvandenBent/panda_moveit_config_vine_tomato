@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
 
   <!-- GDB Debug Option -->
@@ -60,24 +61,12 @@
       <arg name="arm_id" value="$(arg arm_id)" />
     </include>
 
-    <!-- CHOMP -->
-    <include file="$(dirname)/planning_pipeline.launch.xml">
-      <arg name="pipeline" value="chomp" />
-      <arg name="arm_id" value="$(arg arm_id)" />
-    </include>
-
     <!-- Pilz Industrial Motion -->
     <include file="$(dirname)/planning_pipeline.launch.xml">
       <arg name="pipeline" value="pilz_industrial_motion_planner" />
       <arg name="arm_id" value="$(arg arm_id)" />
     </include>
 
-    <!-- Support custom planning pipeline -->
-    <include if="$(eval arg('pipeline') not in ['ompl', 'chomp', 'pilz_industrial_motion_planner'])"
-             file="$(dirname)/planning_pipeline.launch.xml">
-      <arg name="pipeline" value="$(arg pipeline)" />
-      <arg name="arm_id" value="$(arg arm_id)" />
-    </include>
   </group>
 
   <!-- Trajectory Execution Functionality -->

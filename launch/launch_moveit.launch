@@ -9,7 +9,7 @@
   <include file="$(find franka_control)/launch/franka_control.launch" pass_all_args="true" />
   
   <!-- Launch camera calibration -->
-  <include file="$(find moveit_calibration)/camera_calibration.launch"/>
+  <include file="$(find moveit_calibration_gui)/camera_calibration.launch"/>
 
   <!-- By default use joint position controllers -->
   <arg name="transmission" default="position" />

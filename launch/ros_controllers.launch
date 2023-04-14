@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-
+  <arg name="arm_id" default="panda" />
   <!-- Load joint controller configurations from YAML file to parameter server -->
   <rosparam file="$(find panda_moveit_config_vine_tomato)/config/ros_controllers.yaml" command="load"  subst_value="true"/>
 

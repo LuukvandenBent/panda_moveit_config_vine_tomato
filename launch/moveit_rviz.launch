@@ -4,6 +4,7 @@
   <arg name="debug" default="false" />
   <arg unless="$(arg debug)" name="launch_prefix" value="" />
   <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+  <arg name="arm_id" default="panda"/>
 
   <!--Retrieve the right rviz config file-->
   <arg name="rviz_tutorial" default="false" />

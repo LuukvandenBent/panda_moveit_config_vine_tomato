@@ -62,7 +62,7 @@
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
   <include file="$(dirname)/moveit_rviz.launch" if="$(arg use_rviz)">
     <arg name="rviz_tutorial" value="$(arg rviz_tutorial)"/>
-    <arg name="rviz_config" value="$(dirname)/moveit.rviz"/>
+    <arg name="rviz_config" value="$(dirname)/moveit_$(arg arm_id).rviz"/>
     <arg name="debug" value="$(arg debug)"/>
     <arg name="arm_id" value="$(arg arm_id)"/>
   </include>

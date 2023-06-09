@@ -1,6 +1,6 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 70
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
@@ -14,7 +14,7 @@ Panels:
         - /PointCloud21
         - /Image5
       Splitter Ratio: 0.5
-    Tree Height: 70
+    Tree Height: 140
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views

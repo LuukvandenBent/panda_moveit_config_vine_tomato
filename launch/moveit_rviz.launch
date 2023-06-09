@@ -7,7 +7,7 @@
 
   <!--Retrieve the right rviz config file-->
   <arg name="rviz_tutorial" default="false" />
-  <arg name="rviz_config" default="$(dirname)/moveit.rviz" />
+  <arg name="rviz_config" default="$(dirname)/moveit_$(arg arm_id).rviz" />
 
   <arg if="$(eval rviz_config=='')" name="command_args" value="" />
   <arg if="$(eval rviz_config!='' and not rviz_tutorial)" name="command_args" value="-d $(arg rviz_config)" />

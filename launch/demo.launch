@@ -64,6 +64,7 @@
     <arg name="rviz_tutorial" value="$(arg rviz_tutorial)"/>
     <arg name="rviz_config" value="$(dirname)/moveit.rviz"/>
     <arg name="debug" value="$(arg debug)"/>
+    <arg name="arm_id" value="$(arg arm_id)"/>
   </include>
 
   <!-- If database loading was enabled, start mongodb as well -->

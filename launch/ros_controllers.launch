@@ -5,6 +5,7 @@
   <rosparam file="$(find panda_moveit_config_vine_tomato)/config/ros_controllers.yaml" command="load"  subst_value="true"/>
 
   <!-- Load and start the controllers -->
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
-        args="$(arg transmission)_joint_trajectory_controller" />
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/$(arg arm_id)"
+        args="$(arg transmission)_joint_trajectory_controller cartesian_variable_impedance_controller"/><!--  cartesian_variable_impedance_controller  $(arg transmission)_joint_trajectory_controller --> 
+  <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" required="false"/>
 </launch>

@@ -1,7 +1,9 @@
 <launch>
   <!-- Define the MoveIt controller manager plugin to use for trajectory execution -->
   <param name="moveit_controller_manager" value="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
-
+  <param name="ros_control_namespace" value="/$(arg robot_name)" />
   <!-- Load controller list to the parameter server -->
   <rosparam subst_value="true" file="$(find panda_moveit_config_vine_tomato)/config/simple_moveit_controllers.yaml" />
+  <rosparam subst_value="true" file="$(find panda_moveit_config_vine_tomato)/config/ros_controllers.yaml" />
+  <!-- Load controller list to the parameter server <rosparam subst_value="true" file="$(find panda_moveit_config_vine_tomato)/config/ros_controllers.yaml" /> -->
 </launch>
